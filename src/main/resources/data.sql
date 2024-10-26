@@ -1,0 +1,18 @@
+--create schema if not exists diploma_cloud;
+--
+--insert into users(login, password)
+--values ('Alex', '$2a$10$fHYr2Lk2.KwBM4EFgQt97eb0rfOSVFl438DZbYIuE/hXlFL9mH6XG');
+--insert into users(login, password)
+--values ('set', '$2a$10$fHYr2Lk2.KwBM4EFgQt97eb0rfOSVFl438DZbYIuE/hXlFL9mH6XG');
+--insert into users(login, password)
+--values ('rot', '$2a$10$fHYr2Lk2.KwBM4EFgQt97eb0rfOSVFl438DZbYIuE/hXlFL9mH6XG');
+--
+--insert into user_entity_roles(user_entity_id, roles)
+--values (1, 'ROLE_ADMIN');
+--insert into user_entity_roles(user_entity_id, roles)
+--values (1, 'ROLE_WRITE');
+--insert into user_entity_roles(user_entity_id, roles)
+--values (2, 'ROLE_WRITE');
+--insert into user_entity_roles(user_entity_id, roles)
+--values (3, 'ROLE_READ');
+--
