@@ -22,7 +22,7 @@ public class CloudController {
     private final CloudService cloudService;
 
     @PreAuthorize("hasAnyAuthority('ROLE_ADMIN', 'ROLE_WRITE')")
-    @PostMapping("/file")
+    @PostMapping("file")
     public ResponseEntity<String> uploadFile(@NotNull @RequestParam("file") MultipartFile multipartFile,
                                            @RequestParam("filename") String fileName) {
         log.info("Получили файл на загрузку: {}", fileName);

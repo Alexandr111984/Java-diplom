@@ -9,6 +9,7 @@ import sobinda.javadiplomcloud.entity.UserEntity;
 import sobinda.javadiplomcloud.repository.UsersRepository;
 
 import static sobinda.javadiplomcloud.model.Role.ROLE_ADMIN;
+import static sobinda.javadiplomcloud.model.Role.ROLE_READ;
 
 @SpringBootApplication
 @RequiredArgsConstructor
@@ -29,7 +30,7 @@ public class JavaDiplomCloudApplication implements CommandLineRunner {
         UserEntity userEntity = new UserEntity();
         userEntity.setLogin("Alex");
         userEntity.setPassword(passwordEncoder.encode("123"));
-        //userEntity.getRole(ROLE_ADMIN);
+        userEntity.setRole(ROLE_ADMIN);
         System.out.println(userEntity);
 
         UserEntity userEntity1 = new UserEntity();
@@ -41,7 +42,7 @@ public class JavaDiplomCloudApplication implements CommandLineRunner {
         UserEntity userEntity2 = new UserEntity();
         userEntity2.setLogin("rot");
         userEntity2.setPassword(passwordEncoder.encode("123"));
-        //userEntity2.getRole(ROLE_READ);
+        userEntity2.setRole(ROLE_READ);
         System.out.println(userEntity2);
 
         usersRepository.save(userEntity);
